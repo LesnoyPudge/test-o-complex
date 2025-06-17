@@ -1,11 +1,13 @@
 {
     "name": "test-o-complex",
     "version": "0.1.0",
+    "author": "LesnoyPudge",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "preview": "npm i && npm run build && npm run start"
     },
     "dependencies": {
         "@lesnoypudge/utils": "^20.0.0",
