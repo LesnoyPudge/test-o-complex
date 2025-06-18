@@ -17,7 +17,8 @@ export const metadata: Metadata = {
 };
 
 const styles = {
-    wrapper: `${inter.variable} antialiased min-h-dvh pt-[14px] px-[14px] pb-[227px] md:pt-[55px] md:px-[55px] md:pb-[388px] bg-panel-300 text-font-100`,
+    body: `${inter.variable} antialiased text-size-24 font-normal bg-panel-300 text-font-100`,
+    wrapper: 'min-h-dvh pt-[14px] px-[14px] pb-[227px] md:pt-[55px] md:px-[55px] md:pb-[388px]',
     overlay: 'fixed inset-0 pointer-events-none',
 };
 
@@ -28,10 +29,12 @@ const RootLayout = ({
 }>) => {
     return (
         <html lang='ru'>
-            <body className={styles.wrapper}>
-                <Header/>
+            <body className={styles.body}>
+                <div className={styles.wrapper}>
+                    <Header/>
 
-                {children}
+                    {children}
+                </div>
 
                 <div className={styles.overlay} id={OVERLAY_LAYER_ID}></div>
             </body>

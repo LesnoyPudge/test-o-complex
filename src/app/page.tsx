@@ -7,19 +7,10 @@ import {
     ReviewsSection,
 } from './sections';
 import { FC, Suspense } from 'react';
-// import dynamic from 'next/dynamic';
+
+
 
 export const dynamic = 'force-dynamic';
-
-// const ProductsSection = dynamic(() => (
-//     import('./sections/Products/ProductsSection')
-//         .then((v) => v.ProductsSection)
-// ));
-
-// const CartSection = dynamic(() => (
-//     import('./sections/Cart/CartSection')
-//         .then((v) => v.CartSection)
-// ));
 
 const IndexPage: FC = () => {
     return (
